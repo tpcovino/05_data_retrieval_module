@@ -54,8 +54,8 @@ service_cd <- "dv" # means "daily value". See `https://waterservices.usgs.gov/re
 # State code
 state_cd <- "MT"
 # set start and end dates for streamflow time series
-start <- as_date("1990-10-01")
-end <- as_date("2022-10-01")
+# start <- as_date("1990-10-01")
+# end <- as_date("2022-10-01")
 
 # Use whatNWISsites to identify what gauges exist that meet the above conditions. 
 stream_gauges <- whatNWISsites(parameterCd = param_cd, service = service_cd, stateCd = state_cd, startDate = start, endDate = end) %>% 
